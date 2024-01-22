@@ -32,6 +32,13 @@ def main():
 
     st.sidebar.subheader("Prediction")
     st.sidebar.write(f"The predicted class is: {prediction[0]}")
+    
+    if prediction[0] == "Adelie":
+        st.sidebar.image('adelie.gif', caption='Pinguim maneiro')
+    if prediction[0] == "Chinstrap":
+        st.sidebar.image('chinstrap.gif', caption='Pinguim maneiro')
+    if prediction[0] == "Gentoo":
+        st.sidebar.image('gentoo.gif', caption='Pinguim maneiro')
 
     # Display the dataset visualization
     st.subheader("Dataset Visualization")
